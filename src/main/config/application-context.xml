@@ -26,11 +26,7 @@
 	<bean id="walkmod:commons:addall-policy" class="org.walkmod.merger.AddAllMergePolicy" />
 
 	<bean id="walkmod:commons:override-policy" class="org.walkmod.merger.OverrideMergePolicy" />
-
-	<bean id="walkmod:commons:field-policy" class="org.walkmod.javalang.merger.FieldDeclarationPolicy"></bean>
-
-	<bean id="walkmod:commons:comment-policy" class="org.walkmod.merger.AddAllMergePolicy" />
-
+	
 	<bean id="walkmod:commons:groovy-query-engine" class="org.walkmod.query.ScriptingQueryEngine">
 		<property name="language" value="groovy"></property>
 		<property name="includes">
