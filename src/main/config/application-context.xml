@@ -34,7 +34,7 @@
 	<bean id="walkmod:commons:groovy-query-engine" class="org.walkmod.query.ScriptingQueryEngine">
 		<property name="language" value="groovy"></property>
 		<property name="includes">
-			<list>
+			<list>			
 				<value>query.alias.groovy</value>
 			</list>
 		</property>
