@@ -4,7 +4,7 @@
 
 <beans>
 
-	<bean id="walkmod:commons:template" class="org.walkmod.javalang.visitors.DefaultTemplateVisitor"
+	<bean id="walkmod:commons:template" class="org.walkmod.templates.DefaultTemplateVisitor"
 		singleton="false">
 		<property name="templateEngine" ref="walkmod:commons:groovy" />
 	</bean>
@@ -12,25 +12,10 @@
 	<bean id="walkmod:commons:scripting" class="org.walkmod.scripting.ScriptProcessor"
 		singleton="false" />
 
-	<!-- merge policies -->
-	<alias alias="walkmod:commons:default-object-policy" name="walkmod:commons:append-policy" />
-
-	<alias alias="walkmod:commons:default-type-policy" name="walkmod:commons:unmodify-policy" />
-
-	<bean id="walkmod:commons:unmodify-policy" class="org.walkmod.merger.UnmodifyMergePolicy" />
-
-	<bean id="walkmod:commons:append-policy" class="org.walkmod.merger.AppendMergePolicy" />
-
-	<bean id="walkmod:commons:assign-policy" class="org.walkmod.merger.AssignMergePolicy" />
-
-	<bean id="walkmod:commons:addall-policy" class="org.walkmod.merger.AddAllMergePolicy" />
-
-	<bean id="walkmod:commons:override-policy" class="org.walkmod.merger.OverrideMergePolicy" />
-	
 	<bean id="walkmod:commons:groovy-query-engine" class="org.walkmod.query.ScriptingQueryEngine">
 		<property name="language" value="groovy"></property>
 		<property name="includes">
-			<list>			
+			<list>
 				<value>query.alias.groovy</value>
 			</list>
 		</property>

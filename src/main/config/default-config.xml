@@ -3,6 +3,7 @@
  	reader ="org.walkmod.readers.DefaultFileReader"
 	walker="org.walkmod.javalang.walkers.DefaultJavaWalker" 
 	writer="org.walkmod.javaformatter.writers.EclipseWriter"
+	parser="org.walkmod.javalang.walkers.DefaultJavaParser"
 	path = "src/main/java" >	
 	<policy
 			default-object-policy="org.walkmod.merger.AppendMergePolicy" 
