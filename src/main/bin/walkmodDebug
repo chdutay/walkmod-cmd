@@ -40,7 +40,7 @@ echo Preparing to Execute Walkmod in Debug Mode
 QUOTED_ARGS=""
 while [ "$1" != "" ] ; do
 
-  QUOTED_ARGS="$QUOTED_ARGS \"$1\""
+  QUOTED_ARGS="$QUOTED_ARGS $1"
   shift
 
 done
