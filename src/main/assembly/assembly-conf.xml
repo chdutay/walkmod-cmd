@@ -11,6 +11,11 @@
 		<fileSet>
 			<directory>src/main/bin</directory>
 			<outputDirectory>bin</outputDirectory>
+			 <includes>
+                <include>walkmod</include>
+                <include>walkmodDebug</include>
+                <include>*.bat</include>
+            </includes>
 			 <fileMode>0755</fileMode>
 		</fileSet>
 		<fileSet>
