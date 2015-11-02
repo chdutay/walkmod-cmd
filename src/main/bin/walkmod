@@ -57,6 +57,13 @@ case "`uname`" in
            # Look for the Apple JDKs first to preserve the existing behaviour, and then look
            # for the new JDKs provided by Oracle.
            # 
+           if [ -z "$JAVA_HOME" ] && [ -x "/usr/libexec/java_home" ]; then
+             #
+             # Apple JDKs
+             #
+             export JAVA_HOME=`/usr/libexec/java_home`
+           fi
+           
            if [ -z "$JAVA_HOME" ] && [ -L /System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK ] ; then
              #
              # Apple JDKs
@@ -77,13 +84,6 @@ case "`uname`" in
              #
              export JAVA_HOME=/Library/Java/JavaVirtualMachines/CurrentJDK/Contents/Home
            fi           
-
-           if [ -z "$JAVA_HOME" ] && [ -x "/usr/libexec/java_home" ]; then
-             #
-             # Apple JDKs
-             #
-             export JAVA_HOME=`/usr/libexec/java_home`
-           fi
            ;;
 esac
 if [ -z "$JAVA_HOME" ] ; then
