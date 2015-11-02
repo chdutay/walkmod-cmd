@@ -13,6 +13,8 @@
 				root="http://repository.springsource.com/maven/bundles/external" />
 			<ibiblio name="springsource-release" m2compatible="true"
 				root="http://repository.springsource.com/maven/bundles/release" />
+			<ibiblio name="springio-release" m2compatible="true"
+				root="http://repo.spring.io/libs-release-remote/" />
 		</chain>
 	</resolvers>
 </ivysettings>
