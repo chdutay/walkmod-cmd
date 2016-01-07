@@ -1,4 +1,5 @@
 <ivysettings>
+    <property name="ivy.cache.ttl.default" value="1d"/>
 	<settings defaultResolver="walkmod-core" />
 	<configurations defaultconfmapping="compile->compile">
 	</configurations>
