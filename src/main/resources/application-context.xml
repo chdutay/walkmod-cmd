@@ -11,6 +11,8 @@
 		singleton="false">
 		<property name="templateEngine" ref="walkmod:commons:groovy" />
 	</bean>
+	
+	<bean id="walkmod:commons:silent-writer" class="org.walkmod.writers.VisitorMessagesWriter"></bean>
 
 	<bean id="walkmod:commons:scripting" class="org.walkmod.scripting.ScriptProcessor"
 		singleton="false" />
