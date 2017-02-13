@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.walkmod</groupId>
 	<artifactId>walkmod-cmd</artifactId>
-	<version>2.3.4</version>
+	<version>3.0.0</version>
 	<url>https://github.com/rpau/walkmod-cmd</url>
 	<licenses>
 		<license>
@@ -34,7 +34,7 @@
 								<artifactItem>
 									<groupId>org.walkmod</groupId>
 									<artifactId>walkmod-cfg</artifactId>
-									<version>1.4.2</version>
+									<version>2.0</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>src/main/resources</outputDirectory>
@@ -97,7 +97,7 @@
 		<dependency>
 			<groupId>org.walkmod</groupId>
 			<artifactId>walkmod-core</artifactId>
-			<version>[2.0, 3.0)</version>
+			<version>[2.0, 4.0)</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
