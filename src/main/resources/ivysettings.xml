@@ -7,15 +7,15 @@
 		<chain name="walkmod-core">
 
 			<ibiblio name="maven2" m2compatible="true"
-				pattern="[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]" />
-			<ibiblio name="jboss" root="http://repository.jboss.com/maven2"
+				pattern="https://repo1.maven.org/maven2/[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]" />
+			<ibiblio name="jboss" root="https://repository.jboss.com/maven2"
 				m2compatible="true" usepoms="false" />
 			<ibiblio name="springsource-external" m2compatible="true"
-				root="http://repository.springsource.com/maven/bundles/external" />
+				root="https://repository.springsource.com/maven/bundles/external" />
 			<ibiblio name="springsource-release" m2compatible="true"
-				root="http://repository.springsource.com/maven/bundles/release" />
+				root="https://repository.springsource.com/maven/bundles/release" />
 			<ibiblio name="springio-release" m2compatible="true"
-				root="http://repo.spring.io/libs-release-remote/" />
+				root="https://repo.spring.io/libs-release-remote/" />
 		</chain>
 	</resolvers>
 </ivysettings>
